@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Tell Him 'Boy, Bye'</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://use.fontawesome.com/856109b5bd.js"></script>
 
 	<link type="image/png" href="favicon.png" rel="icon">
 </head>
 <body>
-
 <header>
 	<div class="wrapper">	
 	<div class="topHeader">
@@ -22,7 +22,7 @@
 				<i class="fa fa-circle" aria-hidden="true"></i>
 				<i class="fa fa-circle-thin" aria-hidden="true"></i>
 			</div>
-			<p>Bey's Network</p>
+			<p>TELUS</p>
 			<i class="fa fa-wifi" aria-hidden="true"></i>
 		</div> <!--leftheader ends-->
 		
@@ -55,8 +55,9 @@
 <main>
 <div class="wrapper">
 <section class="title">
-	<h1>Tell Him 'Boy, Bye'</h1>
-	<h2>When life gives you lemons...</h2> <p>🍋 🍋 🍋</p>
+	<h1>Tell Him 'Boy, Bye' 🍋</h1>
+	<h2>A Simple App For When Life Gives You Lemons.</h2>
+	<h3>Just answer a few simple questions to generate and send a Beyoncé inspired break up text in minutes!</h3>
 </section>
 		<form action="" class="breakupForm">
 			<fieldset class="numberForm">
@@ -67,28 +68,34 @@
 			<fieldset class="why">
 			<h3>What's causing the split?</h3>
 				
-				<input type="radio" name="why" id="too-good" value="tooGood">
-				<label for="too-good" class="reason1">It's not you, it's me. 🙅</label>
 
-				
-				<input type="radio" name="why" id="cheated" value="cheated">
-				<label for="cheated" class="reason2">Found out he's been cheating 😡</label>
+				<div class="whyFlex">	
+					<input type="radio" name="why" id="too-good" value="tooGood">
+					<label for="too-good" class="reason1">It's not you, it's me. 🙅</label>
+
+					
+					<input type="radio" name="why" id="cheated" value="cheated">
+					<label for="cheated" class="reason2">Found out he's been cheating 😡</label>
+				</div>
 
 			</fieldset>
 
 			<fieldset class="feels">
 				<h3>The thought of saying goodbye makes you feel...</h3>
 				
-				<input type="radio" name="feels" id="liberated" value="liberated">
-				<label for="liberated" class="feels1">Liberated 💃💸🍾</label>
 
-				
-				<input type="radio" name="feels" id="jelly" value="jelly">
-				<label for="jelly" class="feels2">Mad Jelly 🔥😣</label>
+				<div class="feelsFlex">
+					<input type="radio" name="feels" id="liberated" value="liberated">
+					<label for="liberated" class="feels1">Liberated 💃💸🍾</label>
 
-				
-				<input type="radio" name="feels" id="bittersweet" value="bittersweet">
-				<label for="bittersweet" class="feels3">Bittersweet 💕😪💭</label>
+					
+					<input type="radio" name="feels" id="jelly" value="jelly">
+					<label for="jelly" class="feels2">Mad Jelly 🔥😣</label>
+
+					
+					<input type="radio" name="feels" id="bittersweet" value="bittersweet">
+					<label for="bittersweet" class="feels3">Bittersweet 💕😪💭</label>
+				</div>
 
 				<div class="submitContainer">
 					<input type="submit" name="feels" value="Tell him ' boy, bye! ' 👋">
@@ -135,6 +142,7 @@
 		</p>
 	</div>				
 </footer>
+</content>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 	<script src="tellhim.js"></script>
 </body>

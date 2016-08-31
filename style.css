@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-	max-width: 1170px;
+	max-width: 1280px;
 	padding: 10px;
 	margin: 0 auto;
 }
@@ -23,6 +23,9 @@ fieldset {
 header {
 	background-color: #F1F5F8;
 	width: 100%;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 }
 
 .topHeader {
@@ -89,13 +92,13 @@ header {
 }
 
 .backButton i {
-	color: #44B5FB;
+	color: #1B99F6;
 }
 
 .backButton p {
 	margin: 0;
 	letter-spacing: 1px;
-	color: #44B5FB;
+	color: #1B99F6;
 	font-weight: lighter;
 	font-size: 20px;
 	display: flex;
@@ -120,10 +123,11 @@ header {
 
 .details p {
 	letter-spacing: 1px;
-	color: #44B5FB;
+	color: #1B99F6;
 	font-weight: lighter;
 	font-size: 20px;
-	padding: 5px 10px 0 0;	
+	padding-top: 5px;
+		
 }
 
 .main {
@@ -133,17 +137,41 @@ header {
 .title {
 	text-align: center;
 	margin: 0 auto;
+	/*position: relative;*/
 }
 
 h1 {
-	font-size: 80px;
+	font-weight: lighter;
+	font-size: 110px;
 	margin-bottom: 0;
 }
 
 .title h2 {
 	font-weight: lighter;
+	font-size: 40px;
+	position: relative;
 }
 
+.title h2:after {
+	content: '';
+	position: absolute;
+	height: 1px;
+	background: black;
+	color: black;
+	width: 7%;
+	bottom: -40px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+
+.title h3 {
+	font-size: 24px;
+	font-weight: lighter;
+	color: rgba(0,0,0,0.6);
+	margin-top: 100px;
+}
 
 .breakupForm {
 	margin: 0 auto;
@@ -170,34 +198,39 @@ fieldset.numberForm label {
 }
 
 fieldset.numberForm input {
+	margin: -10px auto 0 auto;
 	display: block;
-	width: 20%;
-	margin: 0 auto;
+	width: 22%;
+	text-align: center;
 	padding: 10px 15px;
 	border-radius: 20px;
 	border: 1px solid #e5e5ea;
 	outline: none;	
 }
 
-h3 {
-	margin: 50px auto;
-	font-weight: lighter;
-}
 
 .feels h3 {
 	margin-top: 100px;
 }
 
 .numberForm h3, .why h3, .feels h3 {
+	margin: 100px auto 50px auto;
+	font-weight: lighter;
+	text-transform: uppercase;
+	padding: 20px;
+	font-size: 30px;
 	width: 75%;
 	position:relative;
-	padding:10px 20px;
 	background:#E5E5EA;
 	border-radius:25px;
 	color: black;
 	-webkit-box-shadow: 1px 1px 3px 0px rgba(143,143,143,1);
 	-moz-box-shadow: 1px 1px 3px 0px rgba(143,143,143,1);
 	box-shadow: 1px 1px 3px 0px rgba(143,143,143,1);
+}
+
+.numberForm h3 {
+	margin: 50px auto;
 }
 		
 .numberForm h3:before, .why h3:before, .feels h3:before {
@@ -335,8 +368,8 @@ label:hover{
 }
 
 .submitContainer {
-	margin-top: 100px;
-	margin-bottom: 60px;
+	width: 100%;
+	margin: 100px 0;
 }
 
 .submitContainer input {
@@ -354,7 +387,7 @@ label:hover{
 
 .hiddenContent {
 	display: none;
-		background: rgba(68,181,251,1);
+	background: rgba(68,181,251,1);
 	background: -moz-linear-gradient(top, rgba(68,181,251,1) 0%, rgba(8,132,255,1) 85%, rgba(8,132,255,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,181,251,1)), color-stop(85%, rgba(8,132,255,1)), color-stop(100%, rgba(8,132,255,1)));
 	background: -webkit-linear-gradient(top, rgba(68,181,251,1) 0%, rgba(8,132,255,1) 85%, rgba(8,132,255,1) 100%);
@@ -414,6 +447,9 @@ label:hover{
 	width: 100%;
 	background-color: #F8F8F8;
 	padding: 30px 0;
+	-webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
 }
 
 .contentFlex {
@@ -439,10 +475,10 @@ label:hover{
 
 .send p {
 	letter-spacing: 1px;
-	color: #44B5FB;
+	color: #1B99F6;
 	font-weight: lighter;
 	font-size: 28px;
-	padding: 5px 10px 0 0;	
+	padding: 5px 10px 10px 10px;	
 	cursor: pointer;
 }
 
@@ -486,8 +522,8 @@ label:hover{
 footer {
 	background-color: #e0e0e0;
 	margin: 0;
-	height: 80px;
-	padding-top: 20px;
+	/*height: 80px;*/
+	padding: 20px 10px;
 }
 
 footer p {
@@ -498,10 +534,289 @@ footer p {
 
 footer a {
 	text-decoration: none;
-	color: #0884ff;
+	color: #1B99F6;
 }
 
 
+
+@media all and (max-width: 1024px) {
+    
+	fieldset.numberForm input {
+		margin: -10px auto 0 auto;
+		display: block;
+		width: 40%;
+		text-align: center;
+		padding: 10px 15px;
+		border-radius: 20px;
+		border: 1px solid #e5e5ea;
+		outline: none;	
+	}
+
+	.whyFlex, .feelsFlex {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+	}
+
+	label {
+		margin: 0 auto;
+		width: 60%;
+	}
+	
+	.visible {
+		max-width: 70%;
+	}
+
+
+}
+
+
+@media all and (max-width: 600px) {
+
+	.leftHeader, .time, .rightHeader {
+		font-size: 14px;
+	}
+
+	.backButton i, {
+		font-size: 22px;
+	}
+
+	.backButton p, .name p, .details p {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 80px;
+	}
+
+	.title h2 {
+		font-weight: lighter;
+		font-size: 26px;
+		position: relative;
+	}
+
+	.title h3 {
+		font-size: 18px;
+		margin-top: 80px;
+	}
+	
+	.numberForm h3, .why h3, .feels h3 {
+		font-size: 24px;
+		width: 90%;
+	}
+
+
+	fieldset.numberForm input {
+		margin: -10px auto 0 auto;
+		display: block;
+		width: 60%;
+		text-align: center;
+		padding: 10px 15px;
+		border-radius: 20px;
+		border: 1px solid #e5e5ea;
+		outline: none;	
+	}
+
+	label {
+		margin: 0 auto;
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.visible {
+		max-width: 80%;
+	}
+
+
+} 
+
+
+@media all and (max-width: 480px) {
+
+	.leftHeader, .time, .rightHeader {
+		font-size: 12px;
+	}
+
+	.backButton i, {
+		font-size: 18px;
+	}
+
+	.backButton p, .name p, .details p {
+		font-size: 16px;
+	}
+
+
+	h1 {
+		font-size: 70px;
+	}
+
+	.title h2 {
+		font-weight: lighter;
+		font-size: 22px;
+		position: relative;
+	}
+
+	.title h3 {
+		font-size: 14px;
+		margin-top: 80px;
+	}
+
+	.numberForm h3, .why h3, .feels h3 {
+		font-size: 22px;
+		width: 90%;
+	}
+
+	.submitContainer input {
+		width: 70%;
+		font-size: 22px;
+		margin: 0 auto;
+	}
+
+	
+	.messageContent p {
+		margin: 0;
+		font-size: 22px;
+		padding: 5px;
+	}
+	
+	#placeholder {
+		margin-top: 10px
+	}
+
+	.visible {
+		font-size: 22px;
+		margin-top: 0;
+	}
+
+	.camera i {
+		font-size: 34px;
+	}
+
+	.send p {
+		font-size: 22px;
+	}
+
+
+	footer {
+		font-size: 12px;
+	}
+	
+
+}
+
+
+@media all and (max-width: 375px) {
+
+	.leftHeader, .time, .rightHeader {
+		font-size: 10px;
+	}
+
+	.backButton i, {
+		font-size: 16px;
+	}
+
+	.backButton p, .name p, .details p {
+		font-size: 14px;
+	}
+
+	h1 {
+		font-size: 65px;
+	}
+
+	.title h2 {
+		font-weight: lighter;
+		font-size: 18px;
+		position: relative;
+	}
+
+	.title h3 {
+		font-size: 12px;
+		margin-top: 80px;
+	}
+
+	.numberForm h3, .why h3, .feels h3 {
+		font-size: 20px;
+		width: 90%;
+	}
+
+	.numberForm h3, .why h3, .feels h3 {
+		margin: 70px auto 20px auto;
+		font-size: 16px;
+	}
+
+	input#number {
+		margin-top: 20px;
+		font-size: 16px;
+	}
+
+
+	label {
+		margin: 0 auto;
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.submitContainer input {
+		width: 70%;
+		font-size: 18px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+
+	.messageContent p {
+		margin: 0;
+		font-size: 18px;
+		padding: 5px;
+	}
+
+	.visible {
+		font-size: 18px;
+		margin-top: 0;
+	}
+
+	.camera i {
+		font-size: 32px;
+	}
+
+	.send p {
+		font-size: 18px;
+	}
+
+	footer {
+		font-size: 12px;
+	}
+
+}
+
+@media all and (max-width: 375px) {
+
+	.messageContent p {
+		margin: 0;
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	.visible {
+		font-size: 16px;
+		margin-top: 0;
+	}
+
+
+	.camera i {
+		font-size: 30px;
+	}
+
+	.send p {
+		font-size: 16px;
+	}
+
+	footer {
+		font-size: 10px;
+	}
+
+}
 
 
 

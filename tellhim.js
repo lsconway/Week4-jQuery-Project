@@ -2,7 +2,7 @@ $( function (){
 
 	var why = {
 		cheated: ["I smell your secret. ", "I'm not too perfect, to ever feel this worthless. ", "I am the dragon breathing fire, beautiful man I'm the lion. ", "Beautiful man I know you're lying. ", "You can taste the dishonesty, It's all over your breath. "],
-		tooGood: ["Now I'm the one that's lying, and I don't feel bad about it. ", "It's exactly what you get.", "Tell me, what did I do wrong? I'm movin' on. ", "I came into this world, daddy's little girl, and daddy made a soldier out of me. ", "I am not broken, I'm not crying. ", "I'm not crying, you ain't trying hard enough. ", "You ain't loving hard enough. " , "I’m fresher than you. "]
+		tooGood: ["Now I'm the one that's lying, and I don't feel bad about it. ", "It's exactly what you get. ", "Tell me, what did I do wrong? I'm movin' on. ", "I came into this world, daddy's little girl, and daddy made a soldier out of me. ", "I am not broken, I'm not crying. ", "I'm not crying, you ain't trying hard enough. ", "You ain't loving hard enough. " , "I’m fresher than you. "]
 		}
 
 	var feels = {
